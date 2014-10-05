@@ -1,0 +1,19 @@
+//modules and variables
+@import "partial/base";
+
+//partials
+@import "partial/reset";
+@import "partial/font";
+@import "partial/blocks";
+@import "partial/my.animation";
+@import "partial/custom.classes";
+
+//components
+@import "components/userInfo";
+@import "components/career";
+@import "components/skills";
+@import "components/progressBar";
+@import "components/knowledge";
+@import "components/smthWithLabel";
+
+//vendor

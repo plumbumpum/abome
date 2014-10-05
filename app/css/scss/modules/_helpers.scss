@@ -1,0 +1,8 @@
+@mixin outline ($color) {
+    outline: 1px solid $color;
+}
+
+@function sizeInPercent($fullSize, $partialSize) {
+    @return $partialSize / $fullSize * 100%;
+}
+

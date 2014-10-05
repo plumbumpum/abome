@@ -1,0 +1,22 @@
+@mixin absoluteBlock ($width, $height, $top, $bottom, $left, $right) {
+    position: absolute;
+    box-sizing: border-box;
+    width: $width;
+    height: $height;
+    top: $top;
+    bottom: $bottom;
+    left: $left;
+    right: $right;
+}
+
+@mixin absoluteFullBlock($top: 0, $left: 0) {
+    @include absoluteBlock(100%, 100%, $top, 0, $left, 0)
+}
+
+@mixin absoluteFullWidthBlock ($height, $top, $bottom: auto)  {
+    @include absoluteBlock(100%, $height, $top, $bottom, 0, 0)
+}
+
+@mixin absoluteFullHeightBlock ($width, $left, $right: auto) {
+    @include absoluteBlock($width, 100%, 0, 0, $left, $right)
+}
