@@ -10,6 +10,6 @@ app = connect()
   .use('/font', connect.static('app/font'))
   ;
 
-http.createServer(app).listen(3000, function() {
-  console.log('Running on http://localhost:3000');
+http.createServer(app).listen(8080, function() {
+  console.log('Running on http://localhost:8080');
 });
