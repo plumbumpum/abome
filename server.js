@@ -4,7 +4,7 @@ var connect = require('connect')
 
 app = connect()
   .use(connect.static('app'))
-  .use('/bower_components', connect.static('bower_components'))
+  .use('/bower', connect.static('bower_components'))
   .use('/css', connect.static('app/css'))
   .use('/img', connect.static('app/img'))
   .use('/font', connect.static('app/font'))

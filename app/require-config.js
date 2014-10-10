@@ -1,24 +1,19 @@
-var rq = {
-    bowerComponent: function (path) {
-        return '/bower_components/' + path;
-    }
-};
-
 requirejs.config({
     baseUrl: '/js',
+    urlArgs: 'version=0.0.1',
 
     paths: {
         //libs
-        'jquery': rq.bowerComponent('jquery/dist/jquery.min'),
-        'react': rq.bowerComponent('react/react-with-addons.min'),
-        'JSXTransformer': rq.bowerComponent('react/JSXTransformer'),
-        'jsx': rq.bowerComponent('jsx-requirejs-plugin/js/jsx'),
-        'text': rq.bowerComponent('jsx-requirejs-plugin/js/text'),
-        'moment': rq.bowerComponent('momentjs/moment'),
-        'moment-ru': rq.bowerComponent('momentjs/locale/ru'),
-        'underscore': rq.bowerComponent('underscore/underscore-min'),
-        'routie': rq.bowerComponent('routie/lib/routie'),
-        'json': rq.bowerComponent('requirejs-plugins/src/json'),
+        'jquery': '/bower/jquery/dist/jquery.min',
+        'react': '/bower/react/react-with-addons.min',
+        'JSXTransformer': '/bower/react/JSXTransformer',
+        'jsx': '/bower/jsx-requirejs-plugin/js/jsx',
+        'text': '/bower/jsx-requirejs-plugin/js/text',
+        'moment': '/bower/momentjs/moment',
+        'moment-ru': '/bower/momentjs/locale/ru',
+        'underscore': '/bower/underscore/underscore-min',
+        'routie': '/bower/routie/lib/routie',
+        'json': '/bower/requirejs-plugins/src/json',
         //paths
         'data': '/data',
         //modules
