@@ -6,7 +6,9 @@ define([
     'routie',
     'moment',
     'moment-ru',
-    'modules/arrayExtension'
+    //global
+    'ext/arrayExtension',
+    'ext/underscoreExtension'
 ], function (
     React,
     //pages

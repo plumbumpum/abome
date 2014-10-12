@@ -14,8 +14,12 @@ requirejs.config({
         'underscore': '/bower/underscore/underscore-min',
         'routie': '/bower/routie/lib/routie',
         'json': '/bower/requirejs-plugins/src/json',
+        'jasmine': '/bower/jasmine/lib/jasmine-core/jasmine',
+        'jasmine-html': '/bower/jasmine/lib/jasmine-core/jasmine-html',
         //paths
         'data': '/data',
+        'tests': '/test/tests',
+        'ext': 'modules/extensions',
         //modules
         'inherit': 'modules/inherit'
     },
@@ -25,5 +29,13 @@ requirejs.config({
     },
 
     shim: {
+        'jasmine': {
+            exports: 'jasmine'
+        },
+
+        'jasmine-html': {
+            deps: ['jasmine'],
+            exports: 'jasmine'
+        }
     }
 });

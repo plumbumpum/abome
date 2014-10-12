@@ -10,6 +10,7 @@
     "underscore": "~1.7.0",
     "momentjs": "~2.8.3",
     "routie": "~0.3.2",
-    "requirejs-plugins": "~1.0.2"
+    "requirejs-plugins": "~1.0.2",
+    "jasmine": "1.3"
   }
 }
