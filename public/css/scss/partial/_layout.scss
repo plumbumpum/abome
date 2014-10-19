@@ -4,14 +4,13 @@ body {
     width: 100%;
 
     font-family: DINPro-Regular;
+    background-color: $base-color;
 }
 
 #wrapper {
     position: absolute;
     min-height: 100%;
     width: 100%;
-
-    background-color: $base-color;
 }
 
 #wrapper {

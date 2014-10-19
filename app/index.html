@@ -115,15 +115,15 @@
     <script>
         var canvases = Array.prototype.slice.apply(document.getElementsByClassName('circle-progress-bar')),
 
-        drawCircle = function (ctx, progress, color, width) {
+        drawCircle = function (ctx, progress, color, borderWidth) {
             var halfWidth = ctx.canvas.width / 2,
             halfHeight = ctx.canvas.height / 2,
-            radius = halfWidth - width,
+            radius = halfWidth - borderWidth,
             length = (360 * progress) / 100;
 
             ctx.beginPath();
             ctx.strokeStyle = color;
-            ctx.lineWidth = width;
+            ctx.lineWidth = borderWidth;
             ctx.arc(halfWidth, halfHeight, radius, (Math.PI / 180) * length, 0, true);
             ctx.stroke();
         };
