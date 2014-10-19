@@ -5,9 +5,9 @@ var connect = require('connect')
 app = connect()
   .use(connect.static('app'))
   .use('/bower', connect.static('bower_components'))
-  .use('/css', connect.static('app/css'))
-  .use('/img', connect.static('app/img'))
-  .use('/font', connect.static('app/font'))
+  .use('/css', connect.static('public/css'))
+  .use('/img', connect.static('public/img'))
+  .use('/fonts', connect.static('public/fonts'))
   ;
 
 http.createServer(app).listen(8080, function() {

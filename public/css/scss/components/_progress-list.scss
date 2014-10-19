@@ -1,0 +1,69 @@
+.progress-list {
+    dt:first-child {
+        margin-top: 0;
+        border-top: none;
+    }
+
+    dt {
+        height: 43px;
+        padding-left: 15px;
+        margin-top: 15px;
+
+        font-size: 18px;
+        color: $base-font-color;
+        line-height: 43px;
+        text-transform: uppercase;
+
+        border-top: 1px solid $secondary-line-color;
+        border-bottom: 1px solid $secondary-line-color;
+    }
+
+    dd {
+        @include flex-box(flex-start, flex-start, wrap);
+        padding-left: 15px;
+
+        section {
+            width: 85px;
+            height: 100px;
+
+            .banner {
+                @include flex-box(center, center);
+                position: relative;
+                height: 86px;
+
+                figure {
+                    $figure-height: 58px;
+
+                    position: relative;
+                    width: $figure-height;
+                    height: $figure-height;
+
+                    span {
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        height: 100%;
+                        width: 100%;
+
+                        display: block;
+                        line-height: $figure-height;
+
+                        color: $secondary-font-color;
+                        text-align: center;
+                        font-size: 18px;
+                    }
+                }
+            }
+
+            strong {
+                display: block;
+
+                font-size: 11px;
+                line-height: 14px;
+                text-transform: uppercase;
+                text-align: center;
+                color: $secondary-font-color;
+            }
+        }
+    }
+}

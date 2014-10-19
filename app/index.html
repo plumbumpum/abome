@@ -2,13 +2,149 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Keldibek Ablay</title>
+    <title>abome</title>
     <link rel="stylesheet" href="/css/style.css"/>
 </head>
 <body>
     <div id="wrapper">
+        <div class="info-block">
+            <header>
+                <div class="avatar" style="background-image: url(/img/ava.jpg)"></div>
+            </header>
 
+            <section>
+                <dl class="detail-list">
+                    <dt>кельдибек</dt>
+                    <dd>абылай</dd>
+                    <dt>возраст</dt>
+                    <dd>19</dd>
+                    <dt>город</dt>
+                    <dd>астана</dd>
+                </dl><!--detail-list end-->
+            </section>
+        </div><!--info-block end-->
+
+        <div class="skills-block">
+            <dl class="progress-list">
+                <dt>JavaScript</dt>
+                <dd>
+                    <section>
+                        <div class="banner">
+                            <figure>
+                                <canvas value="87" class="circle-progress-bar" width="58" height="58"></canvas>
+                                <span>87%</span>
+                            </figure>
+                        </div>
+
+                        <strong>prototype</strong>
+                    </section>
+
+                    <section>
+                        <div class="banner">
+                            <figure>
+                                <canvas value="79" class="circle-progress-bar" width="58" height="58"></canvas>
+                                <span>79%</span>
+                            </figure>
+                        </div>
+
+                        <strong>scope</strong>
+                    </section>
+
+                    <section>
+                        <div class="banner">
+                            <figure>
+                                <canvas value="35" class="circle-progress-bar" width="58" height="58"></canvas>
+                                <span>35%</span>
+                            </figure>
+                        </div>
+
+                        <strong>strict mode</strong>
+                    </section>
+                </dd>
+
+                <dt>Css</dt>
+                <dd>
+                    <section>
+                        <div class="banner">
+                            <figure>
+                                <canvas value="23" class="circle-progress-bar" width="58" height="58"></canvas>
+                                <span>23%</span>
+                            </figure>
+                        </div>
+
+                        <strong>adaptive</strong>
+                    </section>
+
+                    <section>
+                        <div class="banner">
+                            <figure>
+                                <canvas value="64" class="circle-progress-bar" width="58" height="58"></canvas>
+                                <span>64%</span>
+                            </figure>
+                        </div>
+
+                        <strong>animation</strong>
+                    </section>
+                </dd>
+            </dl><!--detail-list end-->
+        </div><!--skills-block end-->
+
+        <div class="career-block">
+
+            <div class="career-line">
+                <div class="line"></div>
+                <div class="year year-begin">2014</div>
+                <div class="year year-end">2015</div>
+
+                <ul class="career-steps">
+                    <li class="right" style="bottom: 70%">
+                        <strong>младший разработчик</strong>
+                        <span>август 2014</span>
+                    </li>
+                    <li class="left" style="bottom: 20%">
+                        <strong>dynamic technologies</strong>
+                        <span>февраль 2014</span>
+                    </li>
+                </ul><!--career-steps end-->
+            </div><!--career-line end-->
+
+        </div><!--career-block end-->
     </div><!--wrapper end-->
+
+
+    <script>
+        var canvases = Array.prototype.slice.apply(document.getElementsByClassName('circle-progress-bar')),
+
+        drawCircle = function (ctx, progress, color, width) {
+            var halfWidth = ctx.canvas.width / 2,
+            halfHeight = ctx.canvas.height / 2,
+            radius = halfWidth - width,
+            length = (360 * progress) / 100;
+
+            ctx.beginPath();
+            ctx.strokeStyle = color;
+            ctx.lineWidth = width;
+            ctx.arc(halfWidth, halfHeight, radius, (Math.PI / 180) * length, 0, true);
+            ctx.stroke();
+        };
+
+        canvases.forEach(function (canvas) {
+            var ctx = canvas.getContext('2d'),
+            progress = +canvas.attributes.getNamedItem('value').value,
+
+            color = progress < 40 ? '#b21313':
+                    progress < 80 ? '#608dff':
+                  /*progress > 80*/ '#30ac39';
+
+            ctx.translate(0, ctx.canvas.height);
+            ctx.rotate((-1 / 2 + 0 / 180) * Math.PI);
+            ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.width);
+
+            drawCircle(ctx, 100, '#303b4c', 2);
+            drawCircle(ctx, progress, color, 2);
+        });
+
+    </script>
 
     <!--scripts-->
     <script src="/bower/requirejs/require.js"></script>

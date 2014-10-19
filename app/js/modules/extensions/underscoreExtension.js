@@ -1,5 +1,5 @@
 define(function (require) {
-    var _ = require('abomeunderscore');
+    var _ = require('underscore');
 
     _.tryGet = function (source, path, defaultValue) {
         var steps = path.split('.');

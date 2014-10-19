@@ -1,0 +1,251 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: DINPro-Regular;
+  src: url('/fonts/DINPro/DINPro-Regular.otf') format('opentype'); }
+
+@font-face {
+  font-family: DINPro-Medium;
+  src: url('/fonts/DINPro/DINPro-Medium.otf') format('opentype'); }
+
+@font-face {
+  font-family: DINPro-Light;
+  src: url('/fonts/DINPro/DINPro-Light.otf') format('opentype'); }
+
+body {
+  position: absolute;
+  min-height: 100%;
+  width: 100%;
+  font-family: DINPro-Regular; }
+
+#wrapper {
+  position: absolute;
+  min-height: 100%;
+  width: 100%;
+  background-color: #212935; }
+
+#wrapper .info-block {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 12.76596%;
+  height: 100%;
+  background-color: #1d242e; }
+#wrapper .skills-block {
+  margin-left: 12.76596%;
+  margin-right: 30.4419%; }
+#wrapper .career-block {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 30.4419%;
+  height: 100%;
+  background-color: #f0f4f8; }
+
+.info-block header {
+  margin-top: 15px;
+  height: 72px; }
+.info-block section {
+  margin-top: 30px; }
+
+.avatar {
+  position: relative;
+  margin: 0 auto;
+  height: 72px;
+  width: 72px;
+  background-position: center center;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  border-radius: 50%; }
+
+.detail-list {
+  padding-left: 15px; }
+
+.detail-list dt {
+  margin-top: 22px;
+  color: #788b94;
+  text-transform: uppercase;
+  font-size: 12px; }
+.detail-list dd {
+  color: #c3d7ef;
+  text-transform: capitalize;
+  font-size: 20px; }
+
+.career-line {
+  position: absolute;
+  top: 4.73856%;
+  height: 90.52288%;
+  width: 100%; }
+
+.career-line .line {
+  position: relative;
+  margin: 0 auto;
+  height: 100%;
+  width: 1px;
+  background-color: #cfd4d8; }
+.career-line .year {
+  position: absolute;
+  width: 50%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 11px;
+  color: #a5b5c0; }
+.career-line .year-begin {
+  bottom: 0;
+  right: 0;
+  padding-left: 5px;
+  text-align: left; }
+.career-line .year-end {
+  top: 0;
+  left: 0;
+  padding-right: 5px;
+  text-align: right; }
+.career-line .career-steps {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%; }
+  .career-line .career-steps li {
+    position: absolute;
+    width: 50%;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+    .career-line .career-steps li strong {
+      display: block;
+      padding-bottom: 3px;
+      font-size: 11px;
+      text-transform: uppercase;
+      color: #3ba4ec;
+      border-bottom: 1px solid #cfd4d8; }
+    .career-line .career-steps li strong:after {
+      display: block;
+      position: absolute;
+      width: 5px;
+      height: 5px;
+      content: ""; }
+    .career-line .career-steps li span {
+      font-size: 11px;
+      text-transform: lowercase;
+      color: #a5b5c0; }
+  .career-line .career-steps li.left {
+    left: 0;
+    padding-left: 29px;
+    text-align: left; }
+    .career-line .career-steps li.left strong:after {
+      right: -2px;
+      background-color: #669cff;
+      box-shadow: 0 0 5px rgba(35, 128, 255, 0.63); }
+  .career-line .career-steps li.right {
+    right: 0;
+    padding-right: 29px;
+    text-align: right; }
+    .career-line .career-steps li.right strong:after {
+      left: -2px;
+      background-color: #0ce41b;
+      box-shadow: 0 0 5px rgba(15, 247, 10, 0.63); }
+
+.progress-list dt:first-child {
+  margin-top: 0;
+  border-top: none; }
+.progress-list dt {
+  height: 43px;
+  padding-left: 15px;
+  margin-top: 15px;
+  font-size: 18px;
+  color: #c3d7ef;
+  line-height: 43px;
+  text-transform: uppercase;
+  border-top: 1px solid #2a3444;
+  border-bottom: 1px solid #2a3444; }
+.progress-list dd {
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  -webkit-flex-direction: row;
+  -moz-box-orient: horizontal;
+  -moz-box-direction: normal;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: flex-start;
+  -moz-box-pack: start;
+  justify-content: flex-start;
+  -webkit-align-items: flex-start;
+  -moz-box-align: start;
+  align-items: flex-start;
+  padding-left: 15px; }
+  .progress-list dd section {
+    width: 85px;
+    height: 100px; }
+    .progress-list dd section .banner {
+      display: -webkit-flex;
+      display: -moz-box;
+      display: flex;
+      -webkit-flex-direction: row;
+      -moz-box-orient: horizontal;
+      -moz-box-direction: normal;
+      flex-direction: row;
+      -webkit-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+      -webkit-justify-content: center;
+      -moz-box-pack: center;
+      justify-content: center;
+      -webkit-align-items: center;
+      -moz-box-align: center;
+      align-items: center;
+      position: relative;
+      height: 86px; }
+      .progress-list dd section .banner figure {
+        position: relative;
+        width: 58px;
+        height: 58px; }
+        .progress-list dd section .banner figure span {
+          position: absolute;
+          left: 0;
+          top: 0;
+          height: 100%;
+          width: 100%;
+          display: block;
+          line-height: 58px;
+          color: #788b94;
+          text-align: center;
+          font-size: 18px; }
+    .progress-list dd section strong {
+      display: block;
+      font-size: 11px;
+      line-height: 14px;
+      text-transform: uppercase;
+      text-align: center;
+      color: #788b94; }

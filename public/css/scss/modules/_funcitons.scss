@@ -1,0 +1,3 @@
+@function size-in-percent($partialSize, $fullSize) {
+    @return $partialSize / $fullSize * 100%;
+}

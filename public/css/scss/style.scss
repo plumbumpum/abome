@@ -1,0 +1,17 @@
+//modules and variables
+@import "partial/_base";
+
+////partials
+@import "partial/reset";
+@import "partial/font";
+@import "partial/layout";
+@import "partial/info-block";
+@import "partial/career-block";
+//
+////components
+@import "components/avatar";
+@import "components/detail-list";
+@import "components/career-line";
+@import "components/progress-list";
+
+//vendor

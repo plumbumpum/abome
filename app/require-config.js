@@ -19,7 +19,6 @@ requirejs.config({
         //paths
         'data': '/data',
         'tests': '/test/tests',
-        'ext': 'modules/extensions',
         //modules
         'inherit': 'modules/inherit'
     },

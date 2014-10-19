@@ -1,0 +1,47 @@
+body {
+    position: absolute;
+    min-height: 100%;
+    width: 100%;
+
+    font-family: DINPro-Regular;
+}
+
+#wrapper {
+    position: absolute;
+    min-height: 100%;
+    width: 100%;
+
+    background-color: $base-color;
+}
+
+#wrapper {
+    $info-block-width: size-in-percent(156, 1222);
+    $career-block-width: size-in-percent(372, 1222);
+
+    .info-block {
+        position: fixed;
+        left: 0;
+        top: 0;
+
+        width: $info-block-width;
+        height: 100%;
+
+        background-color: $secondary-color;
+    }
+
+    .skills-block {
+        margin-left: $info-block-width;
+        margin-right: $career-block-width;
+    }
+
+    .career-block {
+        position: fixed;
+        right: 0;
+        top: 0;
+
+        width: $career-block-width;
+        height: 100%;
+
+        background-color: $third-color;
+    }
+}

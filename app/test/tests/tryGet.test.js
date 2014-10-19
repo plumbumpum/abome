@@ -1,6 +1,6 @@
 define(function (require) {
     var _ = require('underscore'),
-    underscoreExtension = require('ext/underscoreExtension');
+    underscoreExtension = require('modules/extensions/underscoreExtension');
 
     describe('try get value from children', function () {
         var model = {
