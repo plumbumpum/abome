@@ -1,10 +1,10 @@
-define(['jquery'], function () {
+define(function () {
     var Inherit,
         getInit,
         filterProps;
 
     getInit = function (props) {
-        var init = init = props.init || null;
+        var init = props.init || null;
         delete props.init;
 
         return init;
@@ -64,7 +64,7 @@ define(['jquery'], function () {
                 initFields.apply(this);
             }
 
-            if (init != null) {
+            if (init !== null) {
                 init.apply(this, arguments);
             } else {
                 Parent.prototype._init.apply(this, arguments);
@@ -76,7 +76,7 @@ define(['jquery'], function () {
         Children.prototype.constructor = Children;
 
         //constructor
-        if (init != null) {
+        if (init !== null) {
             Children.prototype._init = init;
         }
 
