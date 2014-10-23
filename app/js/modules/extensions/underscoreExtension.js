@@ -5,12 +5,8 @@ define(function (require) {
         var steps = path.split('.');
 
         steps.forEach(function (step) {
-            source = source[step] || { }
+            source = source[step] || defaultValue;
         });
-
-        if (typeof source == 'object' && Object.getOwnPropertyNames(source).length == 0) {
-            source = typeof defaultValue === 'undefined' ? '' : defaultValue;
-        }
 
         return source;
     };

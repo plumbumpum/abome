@@ -32,7 +32,6 @@ define(function (require) {
         });
 
         it('do not change source', function () {
-            console.log(model);
             expect(model.children.age).toEqual(19);
         });
 

@@ -12,9 +12,11 @@
     "gulp-autoprefixer": "^1.0.1",
     "gulp-concat": "^2.4.1",
     "gulp-csso": "^0.2.9",
+    "gulp-jshint": "^1.8.5",
     "gulp-sass": "^0.7.3",
     "gulp-uglify": "^1.0.1",
     "gulp-watch": "^1.0.7",
+    "jshint-stylish": "^1.0.0",
     "tiny-lr": "^0.1.4"
   },
   "engines": {

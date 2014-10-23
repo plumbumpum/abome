@@ -2,6 +2,8 @@ var gulp = require('gulp'),
     watch = require('gulp-watch'),
     sass = require('gulp-sass'),
     autoprefixer = require('gulp-autoprefixer'),
+    jshint = require('gulp-jshint'),
+    stylish = require('jshint-stylish'),
     tinylr,
     notifyLiveReload;
 
@@ -35,7 +37,13 @@ gulp.task('livereload', function () {
 
 gulp.task('watch', function () {
     gulp.watch('./public/css/scss/**/*.scss', ['sass']);
-    gulp.watch('./public/css/*.css', notifyLiveReload);
+    gulp.watch('./public/css/**/*.css', notifyLiveReload);
+});
+
+gulp.task('jshint', function () {
+    gulp.src('./app/**/*.js')
+        .pipe(jshint())
+        .pipe(jshint.reporter(stylish));
 });
 
 gulp.task('develop', ['livereload', 'watch']);

@@ -3,7 +3,7 @@ define(['react'], function (React) {
         cs: function (classConfig) {
             var className = React.addons.classSet(classConfig);
 
-            if (this.props.className != null && this.props.className != '' && typeof this.props.className != 'undefined') {
+            if (this.props.className !== null && this.props.className !== '' && typeof this.props.className != 'undefined') {
                 className += ' ' + this.props.className;
             }
 
@@ -23,5 +23,5 @@ define(['react'], function (React) {
 
             return style;
         }
-    }
+    };
 });
