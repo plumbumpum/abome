@@ -23,7 +23,7 @@ define(function (require) {
             core.subscribe('changePerson', function (name, age) {
                 person.name = name;
                 person.age = age;
-            })
+            });
 
             core.publish('changePerson', 'amina', 22);
 
