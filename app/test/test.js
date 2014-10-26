@@ -10,7 +10,8 @@ require(['jquery', 'jasmine-html'], function ($) {
 
     require([
         'tests/inherit.test',
-        'tests/tryGet.test'
+        'tests/tryGet.test',
+        'tests/core.test'
     ], function(){
         jasmineEnv.execute();
     });

@@ -12,7 +12,7 @@ requirejs.config({
         'moment': '/bower/momentjs/moment',
         'moment-ru': '/bower/momentjs/locale/ru',
         'underscore': '/bower/underscore/underscore-min',
-        'routie': '/bower/routie/lib/routie',
+        'page': '/bower/page.js/index',
         'json': '/bower/requirejs-plugins/src/json',
         'jasmine': '/bower/jasmine/lib/jasmine-core/jasmine',
         'jasmine-html': '/bower/jasmine/lib/jasmine-core/jasmine-html',
@@ -20,7 +20,8 @@ requirejs.config({
         'data': '/data',
         'tests': '/test/tests',
         //modules
-        'inherit': 'modules/inherit'
+        'inherit': 'modules/inherit',
+        'core': 'modules/core'
     },
 
     jsx: {
