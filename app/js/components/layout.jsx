@@ -3,12 +3,14 @@ define(function (require) {
         core = require('core');
 
     return React.createClass({
+        componentDidMount: function () {
+            core.publish('userPage:layout', this.props.userId);
+        },
+        
         render: function () {
             return (
                 <div >
                     <div className="info-block">
-                        <header></header>
-                        <section></section>
                     </div>
 
                     <div className="skills-block">

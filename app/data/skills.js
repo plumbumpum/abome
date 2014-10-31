@@ -1,4 +1,4 @@
-define({ skills: [
+define({ data: [
     {
         name: 'JavaScript',
         knowledge: [

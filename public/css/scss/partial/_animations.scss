@@ -1,0 +1,47 @@
+@include animation-class(become-tall, 300ms, both) {
+    0% {
+        opacity: 0;
+        height: 0;
+    }
+
+    100% {
+        opacity: 1;
+        height: 100%;
+    }
+}
+
+@include animation-class(fade-in, 300ms, both) {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@include animation-class(slide-from-right, 300ms, both) {
+    0% {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@include animation-class(slide-from-left, 300ms, both) {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
